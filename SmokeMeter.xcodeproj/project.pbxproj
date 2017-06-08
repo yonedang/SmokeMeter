@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4350D81EE992C30049CC70 /* blip04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8E4350D61EE992C30049CC70 /* blip04.mp3 */; };
+		8E4350D91EE992C30049CC70 /* crrect_answer3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8E4350D71EE992C30049CC70 /* crrect_answer3.mp3 */; };
+		8E58478E1EE6F3FC0080F553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58478D1EE6F3FC0080F553 /* AppDelegate.swift */; };
+		8E5847901EE6F3FC0080F553 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58478F1EE6F3FC0080F553 /* ViewController.swift */; };
+		8E5847931EE6F3FC0080F553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5847911EE6F3FC0080F553 /* Main.storyboard */; };
+		8E5847951EE6F3FC0080F553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5847941EE6F3FC0080F553 /* Assets.xcassets */; };
+		8E5847981EE6F3FC0080F553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5847961EE6F3FC0080F553 /* LaunchScreen.storyboard */; };
+		8EE43A321EE83F1900216B51 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE43A311EE83F1900216B51 /* TimerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E4350D61EE992C30049CC70 /* blip04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blip04.mp3; sourceTree = "<group>"; };
+		8E4350D71EE992C30049CC70 /* crrect_answer3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crrect_answer3.mp3; sourceTree = "<group>"; };
+		8E58478A1EE6F3FC0080F553 /* SmokeMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmokeMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E58478D1EE6F3FC0080F553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E58478F1EE6F3FC0080F553 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E5847921EE6F3FC0080F553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E5847941EE6F3FC0080F553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E5847971EE6F3FC0080F553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E5847991EE6F3FC0080F553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE43A311EE83F1900216B51 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E5847871EE6F3FC0080F553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E5847811EE6F3FC0080F553 = {
+			isa = PBXGroup;
+			children = (
+				8E58478C1EE6F3FC0080F553 /* SmokeMeter */,
+				8E58478B1EE6F3FC0080F553 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E58478B1EE6F3FC0080F553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E58478A1EE6F3FC0080F553 /* SmokeMeter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E58478C1EE6F3FC0080F553 /* SmokeMeter */ = {
+			isa = PBXGroup;
+			children = (
+				8E58478D1EE6F3FC0080F553 /* AppDelegate.swift */,
+				8E58478F1EE6F3FC0080F553 /* ViewController.swift */,
+				8E5847911EE6F3FC0080F553 /* Main.storyboard */,
+				8EE43A311EE83F1900216B51 /* TimerViewController.swift */,
+				8E5847941EE6F3FC0080F553 /* Assets.xcassets */,
+				8E5847961EE6F3FC0080F553 /* LaunchScreen.storyboard */,
+				8E5847991EE6F3FC0080F553 /* Info.plist */,
+				8E4350D61EE992C30049CC70 /* blip04.mp3 */,
+				8E4350D71EE992C30049CC70 /* crrect_answer3.mp3 */,
+			);
+			path = SmokeMeter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E5847891EE6F3FC0080F553 /* SmokeMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E58479C1EE6F3FC0080F553 /* Build configuration list for PBXNativeTarget "SmokeMeter" */;
+			buildPhases = (
+				8E5847861EE6F3FC0080F553 /* Sources */,
+				8E5847871EE6F3FC0080F553 /* Frameworks */,
+				8E5847881EE6F3FC0080F553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmokeMeter;
+			productName = SmokeMeter;
+			productReference = 8E58478A1EE6F3FC0080F553 /* SmokeMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E5847821EE6F3FC0080F553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Swift-Yoneda";
+				TargetAttributes = {
+					8E5847891EE6F3FC0080F553 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XK39Q23USR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8E5847851EE6F3FC0080F553 /* Build configuration list for PBXProject "SmokeMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E5847811EE6F3FC0080F553;
+			productRefGroup = 8E58478B1EE6F3FC0080F553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E5847891EE6F3FC0080F553 /* SmokeMeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E5847881EE6F3FC0080F553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5847981EE6F3FC0080F553 /* LaunchScreen.storyboard in Resources */,
+				8E5847951EE6F3FC0080F553 /* Assets.xcassets in Resources */,
+				8E4350D91EE992C30049CC70 /* crrect_answer3.mp3 in Resources */,
+				8E5847931EE6F3FC0080F553 /* Main.storyboard in Resources */,
+				8E4350D81EE992C30049CC70 /* blip04.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E5847861EE6F3FC0080F553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5847901EE6F3FC0080F553 /* ViewController.swift in Sources */,
+				8EE43A321EE83F1900216B51 /* TimerViewController.swift in Sources */,
+				8E58478E1EE6F3FC0080F553 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E5847911EE6F3FC0080F553 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E5847921EE6F3FC0080F553 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E5847961EE6F3FC0080F553 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E5847971EE6F3FC0080F553 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E58479A1EE6F3FC0080F553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E58479B1EE6F3FC0080F553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E58479D1EE6F3FC0080F553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XK39Q23USR;
+				INFOPLIST_FILE = SmokeMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = swynd.SmokeMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8E58479E1EE6F3FC0080F553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XK39Q23USR;
+				INFOPLIST_FILE = SmokeMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = swynd.SmokeMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E5847851EE6F3FC0080F553 /* Build configuration list for PBXProject "SmokeMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E58479A1EE6F3FC0080F553 /* Debug */,
+				8E58479B1EE6F3FC0080F553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E58479C1EE6F3FC0080F553 /* Build configuration list for PBXNativeTarget "SmokeMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E58479D1EE6F3FC0080F553 /* Debug */,
+				8E58479E1EE6F3FC0080F553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E5847821EE6F3FC0080F553 /* Project object */;
+}

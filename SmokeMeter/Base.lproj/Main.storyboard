@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XUk-UX-VdF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmokeMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smokeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="GtY-iF-eOB">
+                                <rect key="frame" x="113" y="88.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Q99-ND-Iuy"/>
+                                    <constraint firstAttribute="width" constant="150" id="f19-sY-9HA"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERE-LE-adW">
+                                <rect key="frame" x="0.0" y="401" width="375" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本 / 1day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo9-3L-3jZ">
+                                <rect key="frame" x="257.5" y="323" width="67" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UkV-WU-efx">
+                                <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZKA-3u-umd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NGD-DT-Jhg">
+                                <rect key="frame" x="137" y="318" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-bD-gFq">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sxe-77-ZzX"/>
+                                </constraints>
+                                <state key="normal" title="設定">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushSettingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2uk-6H-r44"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UkV-WU-efx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0bj-yS-vZh"/>
+                            <constraint firstItem="ERE-LE-adW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JX3-Xj-LtG"/>
+                            <constraint firstAttribute="trailing" secondItem="ERE-LE-adW" secondAttribute="trailing" id="Nck-dz-GG1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fXb-bD-gFq" secondAttribute="bottom" id="PHL-BS-b56"/>
+                            <constraint firstAttribute="trailing" secondItem="fXb-bD-gFq" secondAttribute="trailing" id="TMe-l0-0fD"/>
+                            <constraint firstItem="GtY-iF-eOB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XM3-Pb-Yh0"/>
+                            <constraint firstItem="fXb-bD-gFq" firstAttribute="top" secondItem="ERE-LE-adW" secondAttribute="bottom" id="XdL-7C-NOo"/>
+                            <constraint firstItem="UkV-WU-efx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YAv-dp-sdk"/>
+                            <constraint firstItem="xo9-3L-3jZ" firstAttribute="leading" secondItem="UkV-WU-efx" secondAttribute="trailing" constant="20" id="Yg1-Ik-ZqH"/>
+                            <constraint firstItem="xo9-3L-3jZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nv7-gG-7Bj"/>
+                            <constraint firstItem="GtY-iF-eOB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-170" id="rGm-1J-Tyi"/>
+                            <constraint firstItem="fXb-bD-gFq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yi5-qZ-Hvp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qaD-mx-DeI"/>
+                    <connections>
+                        <outlet property="meigaraSettingPicker" destination="ERE-LE-adW" id="VvP-aC-zUc"/>
+                        <outlet property="smokeCount" destination="UkV-WU-efx" id="KWy-2d-lcz"/>
+                        <segue destination="auf-gR-A0I" kind="show" identifier="goSmoking" id="L8B-He-kId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="37.331334332833585"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="ox3-ml-GLl">
+            <objects>
+                <viewController id="auf-gR-A0I" customClass="TimerViewController" customModule="SmokeMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="brv-Ts-UUk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fyd-Ng-d99"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uhf-jv-H0X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-wg-BaG">
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="DbI-4W-RF5"/>
+                                    <constraint firstAttribute="width" constant="150" id="Uju-ZF-bc2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushStartButton:" destination="auf-gR-A0I" eventType="touchUpInside" id="6df-GU-TWF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（0円）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-X0-AJp">
+                                <rect key="frame" x="16" y="567" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0hB-YD-WxW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="喫煙中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-3x-URl">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zEf-Ss-cuW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タバコ0本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck1-9Q-63p">
+                                <rect key="frame" x="16" y="517" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hA4-KM-9gN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smokeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rHi-q1-615">
+                                <rect key="frame" x="112.5" y="88.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VUb-CA-SZ9"/>
+                                    <constraint firstAttribute="width" constant="150" id="fml-9E-0n6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6N-vc-PlC">
+                                <rect key="frame" x="16" y="467" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3tf-ZZ-S64"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M6N-vc-PlC" firstAttribute="leading" secondItem="uhf-jv-H0X" secondAttribute="leadingMargin" id="1X2-6y-Kot"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M6N-vc-PlC" secondAttribute="trailing" id="4TW-fQ-pXz"/>
+                            <constraint firstAttribute="trailing" secondItem="gNG-3x-URl" secondAttribute="trailing" id="9f7-T7-9R3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kuz-X0-AJp" secondAttribute="trailing" id="BFp-tL-wir"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ck1-9Q-63p" secondAttribute="trailing" id="LH9-qa-Wzi"/>
+                            <constraint firstItem="rHi-q1-615" firstAttribute="centerY" secondItem="uhf-jv-H0X" secondAttribute="centerY" constant="-170" id="Ld8-ZN-hGT"/>
+                            <constraint firstItem="Fyd-Ng-d99" firstAttribute="top" secondItem="gNG-3x-URl" secondAttribute="bottom" id="OcM-OJ-h3K"/>
+                            <constraint firstItem="kuz-X0-AJp" firstAttribute="top" secondItem="Ck1-9Q-63p" secondAttribute="bottom" id="QEz-ge-D2l"/>
+                            <constraint firstItem="rHi-q1-615" firstAttribute="centerX" secondItem="uhf-jv-H0X" secondAttribute="centerX" id="Qab-jJ-uos"/>
+                            <constraint firstItem="Ck1-9Q-63p" firstAttribute="leading" secondItem="uhf-jv-H0X" secondAttribute="leadingMargin" id="gZm-af-cV1"/>
+                            <constraint firstItem="gNG-3x-URl" firstAttribute="top" secondItem="kuz-X0-AJp" secondAttribute="bottom" id="iva-Kf-vtL"/>
+                            <constraint firstItem="Sh7-wg-BaG" firstAttribute="centerY" secondItem="uhf-jv-H0X" secondAttribute="centerY" id="lv8-55-BeF"/>
+                            <constraint firstItem="kuz-X0-AJp" firstAttribute="leading" secondItem="uhf-jv-H0X" secondAttribute="leadingMargin" id="ofv-WN-I8e"/>
+                            <constraint firstItem="Sh7-wg-BaG" firstAttribute="centerX" secondItem="uhf-jv-H0X" secondAttribute="centerX" id="wta-vZ-4Si"/>
+                            <constraint firstItem="Ck1-9Q-63p" firstAttribute="top" secondItem="M6N-vc-PlC" secondAttribute="bottom" id="xOp-IH-nSc"/>
+                            <constraint firstItem="gNG-3x-URl" firstAttribute="leading" secondItem="uhf-jv-H0X" secondAttribute="leading" id="znE-vE-vHH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boxLabel" destination="Ck1-9Q-63p" id="zsk-hU-Q4p"/>
+                        <outlet property="moneyLabel" destination="kuz-X0-AJp" id="QVh-Q9-iQQ"/>
+                        <outlet property="smokingLabel" destination="gNG-3x-URl" id="Bu2-Ms-oR2"/>
+                        <outlet property="startButton" destination="Sh7-wg-BaG" id="9KD-Ik-nqE"/>
+                        <outlet property="timeLabel" destination="M6N-vc-PlC" id="6Ew-qx-gas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5S-nA-z7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="36.431784107946029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WWw-ki-Uql">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUk-UX-VdF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NNZ-6t-TiN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R1K-Dn-cYg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Pt-Wq-wFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-645.42728635682158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smokeIcon" width="626" height="626"/>
+    </resources>
+</document>
