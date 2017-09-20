@@ -17,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
+    settingFlg = userDefaults.bool(forKey: "settingFlgKey")
+    
+    var storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var viewController:UIViewController
+    
+    if !settingFlg{
+      viewController = storyboard.instantiateViewController(withIdentifier: "setView")
+    }else{
+      viewController = storyboard.instantiateViewController(withIdentifier: "timerView")
+    }
+    
+    window?.rootViewController = viewController
+    
     return true
   }
 
